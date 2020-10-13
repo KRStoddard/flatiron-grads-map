@@ -1,0 +1,114 @@
+{
+  "graduates": [
+    {
+      "name": "Kimberlyn",
+      "company": "Marriott",
+      "location": {
+        "lat": 41.5871045,
+        "lng": -93.6266089
+      },
+      "salary": "",
+      "id": 1
+    },
+    {
+      "name": "Nick Moore",
+      "company": "Flatiron",
+      "location": {
+        "lat": 41.8914211,
+        "lng": -87.6273487
+      },
+      "salary": "",
+      "id": 2
+    },
+    {
+      "name": "Martha",
+      "company": "A Lame Company",
+      "location": {
+        "lat": 25.6947995,
+        "lng": -80.16537330000001
+      },
+      "salary": "2",
+      "id": 3
+    },
+    {
+      "name": "Person",
+      "company": "Company",
+      "location": {
+        "lat": 41.3025806,
+        "lng": -90.20071209999999
+      },
+      "salary": "",
+      "id": 4
+    },
+    {
+      "name": "Rose Tyler",
+      "company": "Bad Wolf",
+      "location": {
+        "lat": 41.6517774,
+        "lng": -91.55374730000001
+      },
+      "salary": "",
+      "id": 5
+    },
+    {
+      "name": "Rose Tyler",
+      "company": "Bad Wolf",
+      "location": {
+        "lat": 41.6517774,
+        "lng": -91.55374730000001
+      },
+      "salary": "",
+      "id": 6
+    },
+    {
+      "name": "Kyle",
+      "company": "Baseball",
+      "location": {
+        "lat": 41.5522402,
+        "lng": -90.4764659
+      },
+      "salary": "",
+      "id": 7
+    },
+    {
+      "name": "Sarah",
+      "company": "Kitz, Inc.",
+      "location": {
+        "lat": 41.8974769,
+        "lng": -88.4661434
+      },
+      "salary": "",
+      "id": 8
+    },
+    {
+      "name": "Name",
+      "company": "Company",
+      "location": {
+        "lat": 41.89286449999999,
+        "lng": -87.61651669999999
+      },
+      "salary": "",
+      "id": 9
+    },
+    {
+      "name": "Name",
+      "company": "NewCompany",
+      "location": {
+        "lat": 41.90441560000001,
+        "lng": -87.6937231
+      },
+      "salary": "",
+      "id": 10
+    },
+    {
+      "name": "Name",
+      "company": "NewCompany",
+      "location": {
+        "lat": 26.2093182,
+        "lng": -98.2292535
+      },
+      "salary": "",
+      "id": 11
+    }
+  ]
+}
