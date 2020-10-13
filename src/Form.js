@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default class Form extends React.Component{
-
+    //renders the form and sends the info back to handlesubmit
     render(){
         return(
             <div className="form">

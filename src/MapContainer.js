@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
-
+//sets mapstyles to be responsive to screen size
 const mapStyles = {
   width: "50%",
   height: "50%"
 }
 
 export class MapContainer extends Component {
-    
+    //sets state to show and hide marker infowindows
     constructor() {
         super()
         this.state = {
@@ -19,6 +19,7 @@ export class MapContainer extends Component {
 
     }
 
+    //changes whether infowindow is shown
     onMarkerClick = (props, marker, e) =>
         this.setState({
         selectedPlace: props,
@@ -26,6 +27,7 @@ export class MapContainer extends Component {
         showingInfoWindow: true
     })
 
+    //rehides the infowindow
     onClose = props => {
         if (this.state.showingInfoWindow) {
             this.setState({
@@ -35,6 +37,7 @@ export class MapContainer extends Component {
         }
     };
 
+    //renders markers for each database instance
     renderMarkers() {
         return this.props.graduates.map(graduate => {
            return (
@@ -48,13 +51,14 @@ export class MapContainer extends Component {
             /> 
         )})
     }
+
+    //renders infowindows for each database instance
     renderWindows() {
       return this.props.graduates.map(graduate => {
         return <InfoWindow
                   marker={this.state.activeMarker}
                   visible={this.state.showingInfoWindow}
                   onClose={this.onClose}
-                  
                 >
                   <div>
                     <h4>{this.state.selectedPlace.name}</h4>
@@ -65,10 +69,12 @@ export class MapContainer extends Component {
       })
     }
 
+    //makes first child div of the mapcontainer responsive to screen size
     componentDidMount(){
       document.getElementsByClassName('map-container')[0].firstElementChild.style.height="100%"
     }
     
+  //renders the map and markers to page
   render() {
     return (
         <div className="map-container">
@@ -90,7 +96,7 @@ export class MapContainer extends Component {
     );
   }
 }
-
+//exports hidden API key
 export default GoogleApiWrapper({
   apiKey: process.env.REACT_APP_MAP_API_KEY
 })(MapContainer);
